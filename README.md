@@ -1,13 +1,36 @@
-# Sample Hardhat Project
+# Redstone vrf test
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This repo is a simple redstone test.
 
-Try running some of the following tasks:
+The hardhat config file is ready for multiple chains but you can remove some parts if you don't want to use them.
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+## Install
+
+First, run:
+
 ```
+npm install
+```
+
+## Tests
+
+Then, you can use the hardhat commands to compile, test and deploy the random system:
+```
+npx hardhat compile
+npx hardhat test
+npx hardhat run scripts/deploy.js --network <your_network>
+```
+
+## Transactions
+
+I added 2 scripts to test the contract deployed:
+```
+npx hh run scripts/generateRandomNumber.ts --network <your_network>
+npx hh run scripts/generateManyRandomNumbers.ts --network <your_network>
+```
+
+**Important:** You need to specify in each script the address of the contract on the network you're actually testing.
+
+## Random generator addresses
+
+Etherlink: 0x0B147f650010d72c82A9bA28b61191A5863E4CdA
