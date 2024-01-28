@@ -1,0 +1,21 @@
+{
+  "name": "redstone-vrf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "@nomiclabs/hardhat-ethers": "^2.0.0"
+  },
+  "dependencies": {
+    "@redstone-finance/evm-connector": "^0.3.6",
+    "@redstone-finance/sdk": "^0.3.6",
+    "dotenv": "^16.4.1"
+  }
+}
